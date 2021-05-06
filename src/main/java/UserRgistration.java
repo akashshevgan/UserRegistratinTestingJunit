@@ -3,17 +3,17 @@ import java.util.regex.Pattern;
 public class UserRgistration {
 
     public boolean firstNameTest(String firstname) {
-        boolean test = Pattern.compile("(^[A-Z]{1}[a-z]{2,}$)").matcher(firstname).matches();
+        boolean test = Pattern.compile("(^[A-Z]{1}[a-z]{2,20}$)").matcher(firstname).matches();
         if (test) {
-            System.out.println("First name is valid");
+            System.out.println(firstname + " First name is valid");
         } else {
-            System.out.println("First name is invalid");
+            System.out.println(firstname + " First name is invalid");
         }
         return test;
     }
 
     public boolean lastNameTest(String lastname) {
-        boolean test = Pattern.compile("^[A-Z][a-z]{3,20}").matcher(lastname).matches();
+        boolean test = Pattern.compile("(^[A-Z]{1}[a-z]{2,20}$)").matcher(lastname).matches();
         if (test) {
             System.out.println(lastname + " lastname is Valid ");
         } else {

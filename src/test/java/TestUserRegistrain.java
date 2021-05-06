@@ -5,15 +5,15 @@ public class TestUserRegistrain {
 
     @Test
     public void firstName() {
-        UserRgistration firstName = new UserRgistration();
-        boolean result = firstName.firstNameTest("Akash");
+        UserRgistration user = new UserRgistration();
+        boolean result = user.firstNameTest("Akash");
         Assertions.assertEquals(true,result);
     }
 
     @Test
     public void lastName() {
-        UserRgistration lastName = new UserRgistration();
-        boolean result = lastName.lastNameTest("Shevgan");
+        UserRgistration user = new UserRgistration();
+        boolean result = user.lastNameTest("Shevgan");
         Assertions.assertEquals(true,result);
     }
 
